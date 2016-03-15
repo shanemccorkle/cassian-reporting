@@ -1,0 +1,22 @@
+//- Desktop Menu
+nav.navbar
+	.container.text-center
+		a(href="index-slider.html")
+			img.logo(src="assets/images/logo/logo-dark.png", alt="Logo")
+		a.toggle-menu.menu-right.pull-right.push-body.nav-icon(data-toggle="collapse" data-target="#side-menu")
+			span.sr-only
+				| Toggle Navigation
+			span.icon-bar
+			span.icon-bar
+			span.icon-bar
+		.collapse.navbar-collapse.center-block
+			ul.navbar-nav.navigation-symbol
+				include navigation-list-blog.jade
+		//- Mobile Menu
+		.cbp-spmenu.cbp-spmenu-vertical.cbp-spmenu-right.text-left#side-menu
+			img(src="assets/images/logo/logo-light.png", alt="Logo")
+			a.close-menu(href="#")
+				i.icon.ion-ios-close-empty.icon-close.menu-close-btn
+			ul.nav
+				include navigation-list-blog-mobile.jade
+			p.copyright COPYRIGHT © 2015  M & M

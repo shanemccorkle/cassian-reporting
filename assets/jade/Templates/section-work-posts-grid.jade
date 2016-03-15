@@ -1,0 +1,113 @@
+//- Works Posts
+#content
+	article
+		include section-work-filters.jade
+		.row
+			.col-md-12
+				.portfolio-container
+					.portfolio.isotope.masonry(data-padding="0", data-col-xs="1", data-col-sm="2", data-col-md="2", data-col-lg="3", data-layout="fitRows",data-title="Show")
+						.masonry-item.portfolio-item.isotope-item.masonry-wide.filter-masonry.filter-print(data-menu-order="2", data-title="Show")
+							a(href="#work-gallery" data-slideID="0").open-gallery-link
+								img(src="assets/images/work/poster.jpg", alt="Title")
+								.portfolio-item-overlay
+									.portfolio-overlay-inner
+										span PRINT
+										h2 POSTER
+										i
+						.masonry-item.portfolio-item.isotope-item.masonry-normal.filter-masonry.filter-case-study(data-menu-order="2", data-title="Show")
+							a(href="#work-gallery" data-slideID="1").open-gallery-link
+								img(src="assets/images/work/mbp.jpg", alt="Title")
+								.portfolio-item-overlay
+									.portfolio-overlay-inner
+										span CASE STUDY
+										h2 REDESIGN
+											i
+						.masonry-item.portfolio-item.isotope-item.masonry-normal.filter-masonry.filter-case-study(data-menu-order="2", data-title="Show")
+							a(href="#work-gallery" data-slideID="0").open-gallery-link
+								img(src="assets/images/work/bag.jpg", alt="Title")
+								.portfolio-item-overlay
+									.portfolio-overlay-inner
+										span CASE STUDY
+										h2 LTS MAGIC
+											i
+						.masonry-item.portfolio-item.isotope-item.masonry-normal.filter-masonry.filter-print(data-menu-order="2", data-title="Show")
+							a(href="#work-gallery" data-slideID="1").open-gallery-link
+								img(src="assets/images/work/desk.jpg", alt="Title")
+								.portfolio-item-overlay
+									.portfolio-overlay-inner
+										span PRINT
+										h2 DESK
+										i
+						.masonry-item.portfolio-item.isotope-item.masonry-normal.filter-masonry.filter-logo(data-menu-order="2", data-title="Show")
+							a(href="#work-gallery" data-slideID="0").open-gallery-link
+								img(src="assets/images/work/logo.jpg", alt="Title")
+								.portfolio-item-overlay
+									.portfolio-overlay-inner
+										span LOGO
+										h2 COMPANY
+										i
+						.masonry-item.portfolio-item.isotope-item.masonry-normal.filter-masonry.filter-web(data-menu-order="2", data-title="Show")
+							a(href="#work-gallery" data-slideID="1").open-gallery-link
+								img(src="assets/images/work/bottle.jpg", alt="Title")
+								.portfolio-item-overlay
+									.portfolio-overlay-inner
+										span WEB
+										h2 BOTTLE
+										i
+#work-gallery.mfp-hide
+	.slide(data-slideid="0")
+		.row
+			.col-md-12.text-center.modal-intro
+				.container
+					img(src="assets/images/work/logo1.png", width="100", height="100", alt="Logo").img-circle
+					span BRANDING
+					h3 LTS MAGIC CASE STUDY
+					p Which light female saying all said years creeping us green brought second. Heaven saw they're one meat deep yielding give they're every unto cattle. Itself. Fruitful he stars dominion there. Behold grass fowl all. Rule lights given void together so fill fill they're. He beast, isn't Waters, darkness after were.
+					a.btn.btn-link VISIT PROJECT
+		.container
+			.row
+				.col-md-12.margin-top
+					.vertical-middle-desktop.row
+						.col-md-6
+							img(src="assets/images/work/single-image-1.jpg", alt="Work Image")
+						.col-md-6.content-block.text-left
+							img(src="assets/images/work/client-avatar.jpg", alt="Work Image").img-circle
+							span CLIENT
+							h3 PARIS OWEL
+							p Given light hath darkness, kind gathered our land all, beast his beast divide hath female heaven The and had can't stars deep all replenish bearing moved own isn't seas tree seas don't over midst Herb he likeness upon dominion behold unto let years great days, whales to bring brought blessed.
+				.col-md-12.margin-top
+					img(src="assets/images/work/single-image-2-big.jpg", alt="Work Image")
+				.col-md-6.margin-top
+					img(src="assets/images/work/single-image-2.jpg", alt="Work Image")
+				.col-md-6.margin-top
+					img(src="assets/images/work/single-image-3.jpg", alt="Work Image")
+				.col-md-12.margin-top
+					include modal-share.jade
+	.slide(data-slideid="1")
+		.row
+			.col-md-12.text-center.modal-intro
+				.container
+					img(src="assets/images/work/logo1.png", width="100", height="100", alt="Logo").img-circle
+					span WEB
+					h3 WEBSITE REDESIGN
+					p Third great. Hath firmament. May their stars male moveth may saw together meat the whose herb of gathered, greater green spirit deep. Let without May stars fruitful meat doesn't. Light life. Also moveth years without air likeness land grass dry. So open you'll years for moving Beast, said bearing winged. 
+					a.btn.btn-link VISIT PROJECT
+		.container
+			.row
+				.col-md-12.margin-top
+					.vertical-middle-desktop.row
+						.col-md-6
+							img(src="assets/images/work/single-image-3.jpg", alt="Work Image")
+						.col-md-6.content-block.text-left
+							img(src="assets/images/work/client-avatar.jpg", alt="Work Image").img-circle
+							span CLIENT
+							h3 PARIS OWEL
+							p Given light hath darkness, kind gathered our land all, beast his beast divide hath female heaven The and had can't stars deep all replenish bearing moved own isn't seas tree seas don't over midst Herb he likeness upon dominion behold unto let years great days, whales to bring brought blessed.
+				.col-md-12.margin-top
+					img(src="assets/images/work/single-image-2-big.jpg", alt="Work Image")
+				.col-md-6.margin-top
+					img(src="assets/images/work/single-image-1.jpg", alt="Work Image")
+				.col-md-6.margin-top
+					img(src="assets/images/work/single-image-2.jpg", alt="Work Image")
+				.col-md-12.margin-top
+					include modal-share.jade

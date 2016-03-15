@@ -1,0 +1,296 @@
+/* WIDGETS */
+/* ===================================== */
+
+/* - General Rules - */
+
+.widget,
+.gallery-widget {
+	margin-top: 24px !important
+}
+
+.widget h3,
+.gallery-widget h3,
+.text-widget h3 {
+	margin-bottom: 24px;
+	font-size: 20px;
+}
+
+.widget,
+.gallery-widget,
+.text-widget {
+	margin-bottom: 48px;
+}
+
+.widget:after,
+.gallery-widget:after,
+.text-widget:after {
+	content:'';
+	display: block;
+	width: 100%;
+	height: 1px;
+	background-color: darken($color-light, 3%);
+	margin-top: 28px;
+}
+
+.widget .media-body p {
+	line-height: 20px !important;
+}
+
+/* - Gallery Widget - */
+
+.gallery { 
+	width: 100%; 
+	list-style: none;
+	display: block !important;
+	margin-left: -3px;
+	padding-left: 0 !important;
+}
+
+.gallery-widget span.line-divider-small{ 
+	margin-left: 3px
+}
+
+.gallery li { 
+	width: 33.3%; 
+	padding: 5px;
+	display: inline-block;
+	float: left
+}
+
+.gallery li img { 
+	width: 100%;
+}
+
+.gallery li figure { 
+	width: 100%;
+	position: relative;
+	display: inline-block;
+}
+
+.toggleme {
+	width: 300px;
+	height: 300px;
+	background-color: #000;
+	position: relative
+}
+
+.gallery li figure div { 
+	width: 100%; 
+	height: 100%; 
+	position: absolute;
+	text-align: center; 
+	cursor: pointer;
+	left: 0; 
+	top: 0; 
+	background: rgba($color-primary,.5); 
+	opacity: 0;
+	@include transition(.2s);
+}
+
+.gallery li figure div a { 
+	color:#fff;
+}
+
+.gallery li figure div i { 
+	margin-top:33%;
+	display:inline-block;
+	font-size:30px;
+	color: $text-color;
+}
+
+.gallery li figure:hover div { 
+	opacity:1;
+}
+
+.gallery li figure:hover div a i { 
+	-webkit-animation: fadeInUp .2s;
+	animation:fadeInUp .2s;
+}
+
+/* - Blog Sidebar Hr - */
+
+.blog-sidebar hr {
+	border-style:dotted;
+	margin-top: 29px
+}
+
+/* - Search Widget - */
+
+.search { 
+	width:100%; 
+	float:left;
+	margin-bottom: 48px;
+}
+
+.search form { 
+	width:100%; 
+	float:left;
+}
+
+.search form input[type="text"] { 
+	width:80%; 
+	float:left;
+	padding:8px;
+	padding-left:40px;
+	border:none;
+	height: 40px;
+	outline-left: black 1px solid;
+	color:$text-color-semi;
+	font-size: 13px;
+	background-color: darken( $color-light, 4% );
+	display: inline-block !important;
+	text-transform: uppercase
+}
+
+.search form button[type="submit"] { 
+	width:20%;  
+	padding:0;
+	text-align:center; 
+	background:#febd0e; 
+	color:#fff;
+	height: 40px;
+	display: inline-block !important;
+}
+
+.search form i{ 
+	position: absolute;
+	top: 12px;
+	left: 29px;
+	font-size: 14px;
+	padding: 1px;
+}
+
+/* - Text Widget - */
+
+.text-widget {
+	margin-top: 24px !important
+}
+
+.text-widget p {
+	opacity: .8;
+}
+
+/* - Categories Widget - */
+
+ul.categories-widget {
+	padding-left: 0 !important;
+	list-style: none;
+}
+
+ul.categories-widget li {
+	margin-left: 0 !important;
+	display: block !important;
+	margin-top: 5px;
+}
+
+ul.categories-widget li a:not(:first-child) {
+	margin-top: 15px !important
+}
+
+ul.categories-widget li a{
+	font-size: 14px;
+	display: block !important;
+}
+
+ul.categories-widget li a i{
+	margin-left: 0 !important;
+	margin-right: 5px;
+}
+
+/* - Tags Widget - */
+
+.tags-widget {
+	
+}
+
+.button-tag {
+	display: inline-block;
+	margin-top: 20px;
+	margin-bottom: 10px
+}
+
+.button-tag a{
+	font-size: 12px;
+	font-weight: 400;
+	padding: 10px;
+	background-color: darken($color-light, 1%);
+	color:$color-dark !important;
+	width: auto !important;
+	letter-spacing: 1px;
+}
+
+.button-tag a:hover {
+	color:$color-primary !important;
+	border-color:$color-primary
+}
+
+/* - Top seller widget - */
+
+/* 
+.top-seller-widget {
+	margin-top: 24px
+} */
+
+.top-seller-widget-title {
+	display: block;
+	font-size: 13px;
+	font-weight: 600;
+	padding-top: 4px
+}
+
+.top-seller-widget-rating {
+	display: block;
+}
+
+.top-seller-widget-rating i {
+	font-size: 10px
+}
+
+.top-seller-widget-price {
+	display: block
+}
+
+.top-seller-widget-price  small {
+	vertical-align: top;
+	font-size: 12px;
+	padding-left: 4px
+}
+
+/* - Comment Widget - */
+
+.comment-widget-title {
+	display: block;
+	font-size: 13px;
+	font-weight: 600;
+}
+
+.comment-widget-title small {
+	font-size: 10px
+}
+
+/*  - Archive Widget -  */
+
+.archive-widget {
+	padding-left: 0 !important;
+	list-style: none
+}
+
+.archive-widget li:before {
+	content: '-'
+}
+
+.archive-widget li a span.archive-info {
+	font-size: 16px;
+}
+
+/* - Latest Posts - */
+
+.media-body a span {
+	font-size: 14px;
+	font-weight: 400;
+}
+
+.media-body p {
+	opacity: .8;
+	font-size: 12px;
+}

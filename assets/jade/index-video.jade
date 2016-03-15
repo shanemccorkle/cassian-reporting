@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+html(lang="en")
+	head
+		include templates/head.jade
+	body(data-spy="scroll" data-target="#scroll-nav" data-offset="10")
+		include templates/navigation-video.jade
+		include templates/fixed-navigation.jade
+		include templates/go-top-btn.jade
+		.full-height-video.section-overlay-dark.text-center.vertical-middle
+			include templates/video-splash.jade
+		section.section.section-dark.text-center#about
+			.container
+				header.section-head
+					span 01
+					h2 ABOUT
+					p Get to knows us better
+				include templates/section-about.jade
+		section.section.section-nopadding-bottom.section-black.text-center#video-intro
+			header.section-head.padded-big
+				h2 VIDEO INTRO
+				p A video made exclusively in our offices
+			include templates/video-intro.jade
+		section.section.section-dark.text-center#services
+			.container
+				header.section-head
+					span 02
+					h2 SERVICES
+					p We specialize in design and web technologies
+				include templates/section-services.jade
+		section.section.section-nopadding.container-fluid.vertical-middle-desktop
+			include templates/side-image.jade
+		section.section.section-dark.section-nopadding-bottom.text-center#works
+			.container-fluid
+				header.section-head
+					span 03
+					h2 WORKS
+					p Selected projects and case studies
+				include templates/section-work-posts.jade
+		section.section.section-lighter.text-center#team
+			.container
+				header.section-head
+					span 04
+					h2 TEAM
+					p An all-star team ready to serve you
+				include templates/section-team.jade
+		section.section.section-black.text-center.background-testimonials.section-overlay-dark#testimonials
+			.container
+				header.section-head
+					span 05
+					h2 TESTIMONIALS
+					p A word clients said about us
+				include templates/section-testimonials.jade
+		section.section.section-dark.text-center#blog
+			.container
+				header.section-head
+					span 06
+					h2 BLOG
+					p Curated stories and news across our team
+				include templates/section-blog-grid.jade
+		section.section-nopadding
+			.google-map#map(style="height: 500px")
+		section.section.section-lighter.text-center#contact
+			.container
+				header.section-head
+					span 07
+					h2 CONTACT
+					p For any bussiness inquiries, don't hesitate to reach us
+				include templates/section-contact.jade
+		section.section.section-short.section-light.text-center.background-newsletter#newsletter
+			.container
+				header.section-head
+					h2 NEWSLETTER
+					p Stay updated with latest news and case studies
+				include templates/section-newsletter.jade
+		footer.footer-dark
+			include templates/footer.jade
+		include templates/scripts.jade
+		script(src="http://f.vimeocdn.com/js/froogaloop2.min.js")

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+html(lang="en")
+	head
+		include templates/head.jade
+	body
+		div.body-border
+			include templates/navigation-blog.jade
+			include templates/go-top-btn.jade
+			section.section.section-tiny.section-light
+				.container
+					.row
+						.col-md-8.padded-top-big
+							.row
+								include templates/blog-page.jade
+						.col-md-4.padded-top-big
+							.row
+								include templates/sidebar.jade	
+			footer.footer-dark
+				include templates/footer.jade
+			include templates/scripts.jade

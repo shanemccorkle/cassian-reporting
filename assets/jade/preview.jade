@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+html(lang="en")
+	head
+		include templates/head.jade
+		link(rel='stylesheet', href='assets/css/preview.css', type='text/css', media='all')
+	body.os-animation(data-os-animation="fadeIn", data-os-animation-delay="0s")
+		section.section.section-nopadding.section-black.sticky
+			.container
+				.row
+					.col-md-6.text-left.small-screen-text-center
+						img(src="assets/images/logo/logo-light.png", alt="Logo")
+					.col-md-6.text-right.preview-links.small-screen-text-center.small-screen.padding-bottom
+						a(href="#").margin-right SUPPORT
+						a(href="#") PICK A DEMO
+						a(href="#").btn.btn-success.margin-left BUY NOW
+		section.section.section.preview-demos#demo
+			.container.text-center.padded-top
+				header.section-head
+					h2 PICK A DEMO
+					p Begin the journey by selecting one of the available demos:
+				.row
+					.col-md-6
+						figure.os-animation(data-os-animation="fadeIn", data-os-animation-delay="0s")
+							a(href="index-slider.html")
+								img(src="assets/images/preview/slider.jpg", alt="Image")
+							.demo-details
+								h4 DEMO 1
+								p Fullscreen Slider & Centered Menu
+					.col-md-6.small-screen-margin-top
+						figure.os-animation(data-os-animation="fadeIn", data-os-animation-delay=".2s")
+							a(href="index-video.html")
+								img(src="assets/images/preview/video.jpg", alt="Image")
+							.demo-details
+								h4 DEMO 2
+								p Fullscreen Video & Fixed Menu
+					.col-md-6.small-screen-margin-top.margin-top
+						figure.os-animation(data-os-animation="fadeIn", data-os-animation-delay=".4s")
+							a(href="index-hamburger-menu.html")
+								img(src="assets/images/preview/ham.jpg", alt="Image")
+							.demo-details
+								h4 DEMO 3
+								p Fullscreen Slider & Bordered & Hamburger Menu
+					.col-md-6.small-screen-margin-top.margin-top
+						figure.os-animation(data-os-animation="fadeIn", data-os-animation-delay=".6s")
+							a(href="index-border.html")
+								img(src="assets/images/preview/border.jpg", alt="Image")
+							.demo-details
+								h4 DEMO 4
+								p Fullscreen Slider & Bordered & Fixed Menu
+					.col-md-12.padded-top.preview-more-to-come
+						h4 MORE TO COME REALLY SOON
+		section.section.section-short.background-preview-footer.preview-footer-message
+			.container.text-center
+				h1.os-animation(data-os-animation="fadeInUp", data-os-animation-delay="0s") LOOKING FOR MORE?
+				p.os-animation(data-os-animation="fadeInUp", data-os-animation-delay=".2s") If you are looking for a feature or a demo which is not listed, don't hesitate to contact and request it!
+				a.btn.btn-link(href="#") CONTACT
+				img(src="assets/images/logo/brand-logo.png", alt="Andrewch Logo").os-animation(data-os-animation="fadeIn", data-os-animation-delay="0s")
+		include templates/scripts.jade

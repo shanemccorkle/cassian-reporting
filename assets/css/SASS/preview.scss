@@ -1,0 +1,123 @@
+.preview-links {
+	padding-top: 35px;
+}
+
+.preview-demos figure img{
+	width: 100%;
+}
+
+.preview-demos {
+	background-color: darken(#fff, 5%);
+}
+
+.preview-demos	 .section-head:after {
+	content:'';
+	display: block;
+	width: 1px;
+	height: 30px;
+	background-color:#ccc;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 24px;
+}
+
+.preview-demos .demo-details {
+	width: 100%;
+	background-color: #fff;
+	color: #000;
+	padding: 30px;
+	text-align: left;
+	h4 {
+		font-weight: 600;
+		display: block;
+		cursor: default;
+		-webkit-transition: all  .2s ease-in-out;
+		-moz-transition: all  .2s ease-in-out;
+		-ms-transition: all  .2s ease-in-out;
+		-o-transition: all  .2s ease-in-out;
+		transition: all  .2s ease-in-out;
+	}
+	p {
+		font-size: 14px;
+		opacity: .6;
+		cursor: default;
+	}
+	a {
+		display: block;
+	}
+}
+
+.preview-demos figure:hover h4 {
+	color: #2ecc71;
+}
+
+.preview-more-to-come:before {
+	content:'+';
+	font-size: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	position: relative;
+	opacity: .2;
+}
+
+.preview-more-to-come h4 {
+	font-weight: 600;
+	opacity: 1;
+}
+
+.btn-success:hover,
+.btn:hover {
+	color:#fff !important;
+}
+
+.preview-footer-message h1 {
+	font-weight: 800;
+	color: #fff;
+	z-index: 999999;
+	position: relative;
+}
+
+.preview-footer-message p {
+	font-size: 14px;
+	color:#fff;
+	opacity: .6;
+	z-index: 999999;
+	position: relative;
+}
+
+.preview-footer-message a.btn {
+	margin-top: 24px;
+	color:#fff !important;
+	&:hover {
+		color: #2ecc71 !important;
+	}
+}
+
+.preview-footer-message img {
+	display: block;
+	margin-top: 72px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 40px;
+	-webkit-user-select: none;  /* Chrome all / Safari all */
+	-moz-user-select: none;     /* Firefox all */
+	-ms-user-select: none;      /* IE 10+ */
+	user-select: none;          /* Likely future */  
+}
+
+.background-preview-footer {
+	background-image: url("../../images/preview/footer.jpg"); 
+	background-repeat: no-repeat; 
+	background-size: cover;
+	background-position: bottom center;
+	z-index: -1;
+	position: relative;
+}
+
+.sticky {
+	position: fixed;
+	z-index: 9999999999 !important;
+	width: 100%;	
+}

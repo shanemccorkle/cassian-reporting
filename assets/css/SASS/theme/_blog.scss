@@ -1,0 +1,140 @@
+/* BLOG */
+/* ===================================== */
+
+/* - Blog posts (Front Page) */
+
+// Style 1 
+
+.blog-post-full-width {
+	position: relative;
+	min-height: 700px;
+	height: auto;
+}
+
+.blog-post-details {
+	background-color: darken($color-light, 2%);
+	position: absolute;
+	top: -90px;
+	width: 100%;
+	padding: 48px;
+}
+
+@media (max-width: 991px) {
+	.blog-post-details {
+		position: relative;
+		top: 0;
+		padding: 20px;
+	}
+}
+
+.blog-post-details span {
+	@extend .title-space;
+	font-size: 12px;
+	letter-spacing: 2px;
+}
+
+.blog-post-details h3 {
+	@extend .black;
+}
+
+.blog-post-details p {
+	text-align: justify;
+}
+
+.blog-post-details a.btn {
+	margin-top: 24px;
+}
+
+/* - Grid - */
+
+.blog-grid-post img {
+	width: 100%;
+}
+
+.blog-grid-post-details {
+	width: 100%;
+	background-color: darken($color-light, 2%);
+	padding: 24px;
+	text-align: left !important;
+}
+
+.blog-grid-post-details span {
+	@extend .title-space;
+	font-size: 12px;
+	letter-spacing: 2px;
+}
+
+.blog-grid-post-details h3 a{
+	@extend .black;
+	@extend .big;
+	line-height: 20px;
+}
+
+.blog-grid-post-details p {
+	opacity: .7;
+	margin-top: 24px;
+	margin-bottom: 24px;
+}
+
+/* - Blog Author Effect - */
+
+// Full Width
+
+.blog-post-author {
+	position: absolute !important;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+	top: 4px;
+	opacity: 0;
+	@include transition(.2s);
+}
+
+.blog-post-author h5 {
+	color: $color-light;
+	margin-top: 4px;
+	font-weight: 600;
+}
+
+.blog-post-full-width:hover .blog-post-author {
+	position: absolute !important;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+	top: 24px;
+	opacity: 1;
+}
+
+// Grid 
+
+.blog-post-author-grid {
+	position: absolute !important;
+	left: 14px;
+	top: 24px;
+	opacity: 0;
+	@include transition(.2s);
+}
+
+.blog-post-author-grid img {
+	float: left;
+	display: inline-block;
+	width: 40px !important;
+	height: 40px !important;
+}
+
+.blog-post-author-grid h5 {
+	color: $color-light;
+	margin-top: 6px;
+	float: right;
+	margin-left: 6px;
+	font-weight: 600;
+}
+
+.blog-grid-post:hover .blog-post-author-grid {
+	position: absolute !important;
+	left: 38px;
+	top: 24px;
+	opacity: 1;
+}

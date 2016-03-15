@@ -1,0 +1,195 @@
+/* BACKGROUND IMAGE CLASSES */
+/* ===================================== */
+
+/* - Section Overlays - */
+
+.section-overlay { 
+	position:relative;
+}
+
+.section-overlay:after {
+	content:''; 
+	width:100%; 
+	height:100%; 
+	position:absolute; 
+	left:0; top:0; 
+	background: #fff; 
+	opacity: .9;
+	z-index:0;
+}
+
+.section-overlay-dark { 
+	position:relative;
+}
+
+.section-overlay-dark:after {
+	content:''; 
+	width:100%; 
+	height:100%; 
+	position:absolute; 
+	left:0; top:0; 
+	background: rgba($color-dark, 0.7); 
+	z-index:0;
+}
+
+.section-overlay-video { 
+	position:relative;
+}
+
+.section-overlay-video:after {
+	content:''; 
+	width:100%; 
+	height:100%; 
+	position:absolute; 
+	left:0; top:0; 
+	background: rgba(#fff, .86); 
+	z-index:-1;
+}
+
+/* - Z Index Fixes - */
+
+.inner {
+	z-index: 99 !important;
+	height: 100%
+}
+
+ul.breadcrumb {
+	z-index: 9 !important;
+	position: relative
+}
+
+/* - Backgrounds - */
+
+.background-team-quote {
+	background-image: url("../images/team-member-quote.jpg"); 
+	background-repeat: no-repeat; 
+	background-size: cover;
+	background-position: center center;
+}
+
+.background-newsletter{
+	background-image: url("../images/newsletter-background.png"); 
+	background-repeat: no-repeat; 
+	background-size: cover;
+	background-position: top bottom;
+}
+
+.background-slide-1{
+	background-image: url("../images/slide-3.jpg"); 
+	background-repeat: no-repeat; 
+	background-repeat: no-repeat; 
+	background-size: cover;
+	background-position: center center;
+}
+
+.background-slide-2{
+	background-image: url("../images/slide-2.jpg"); 
+	background-repeat: no-repeat; 
+	background-repeat: no-repeat; 
+	background-size: cover;
+	background-position: center center;
+}
+
+.background-slide-3{
+	background-image: url("../images/slide-3.jpg"); 
+	background-repeat: no-repeat; 
+	background-repeat: no-repeat; 
+	background-size: cover;
+	background-position: center center;
+}
+
+.background-slide-4{
+	background-image: url("../images/slide-4.jpg"); 
+	background-repeat: no-repeat; 
+	background-repeat: no-repeat; 
+	background-size: cover;
+	background-position: center center;
+}
+
+.background-slide-5{
+	background-image: url("../images/slide-5.jpg"); 
+	background-repeat: no-repeat; 
+	background-repeat: no-repeat; 
+	background-size: cover;
+	background-position: center center;
+}
+
+.background-slide-6{
+	background-image: url("../images/slide-6.jpg"); 
+	background-repeat: no-repeat; 
+	background-repeat: no-repeat; 
+	background-size: cover;
+	background-position: center center;
+}
+
+.background-slide-7{
+	background-image: url("../images/slide-7.jpg"); 
+	background-repeat: no-repeat; 
+	background-repeat: no-repeat; 
+	background-size: cover;
+	background-position: center center;
+}
+
+.background-blog-single {
+	background-image: url("../images/blog-single-image-1.jpg"); 
+	background-repeat: no-repeat; 
+	background-size: cover;
+	background-position: center center;
+}
+
+.background-blog-single-2 {
+	background-image: url("../images/blog-single-image-2.jpg"); 
+	background-repeat: no-repeat; 
+	background-size: cover;
+	background-position: center center;
+}
+
+.background-blog-single-3 {
+	background-image: url("../images/blog-single-image-3.jpg"); 
+	background-repeat: no-repeat; 
+	background-size: cover;
+	background-position: center center;
+}
+
+.background-team-member-1 {
+	background-image: url("../images/team-member-single-1.jpg"); 
+	background-repeat: no-repeat; 
+	background-size: cover;
+	background-position: center center;
+}
+
+.background-team-member-2 {
+	background-image: url("../images/team-member-single-2.jpg"); 
+	background-repeat: no-repeat; 
+	background-size: cover;
+	background-position: center center;
+}
+
+.background-team-member-3 {
+	background-image: url("../images/team-member-single-3.jpg"); 
+	background-repeat: no-repeat; 
+	background-size: cover;
+	background-position: center center;
+}
+
+.background-grid {
+	background-image: url("../images/grid.png"); 
+	background-repeat: repeat; 
+	position: absolute;
+	height: 100%;
+	width: 100%;
+}
+
+.background-testimonials {
+	background-image: url("../images/testimonials.jpg"); 
+	background-repeat: no-repeat; 
+	background-size: cover;
+	background-position: center center;
+}
+
+.background-side-image {
+	background-image: url("../images/side-image.jpg"); 
+	background-repeat: no-repeat; 
+	background-size: cover;
+	background-position: center center;
+}

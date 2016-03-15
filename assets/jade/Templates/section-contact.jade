@@ -1,0 +1,32 @@
+//- Contact Section
+.row
+	.col-md-12
+		.row
+			.col-md-4.icon-block.icon-block-dark.os-animation(data-os-animation="fadeInUp", data-os-animation-delay="0s")
+				i.ion-ios-telephone
+				h3 CALL US
+				p.text-center +030 - 555 - 4032
+			.col-md-4.icon-block.icon-block-dark.small-screen-margin-top.os-animation(data-os-animation="fadeInUp", data-os-animation-delay=".2s")
+				i.ion-ios-flag
+				h3 LOCATION
+				p.text-center 8th Avenue - New York 8845
+			.col-md-4.icon-block.icon-block-dark.small-screen-margin-top.os-animation(data-os-animation="fadeInUp", data-os-animation-delay=".4s")
+				i.ion-ios-email
+				h3 E-MAIL
+				p.text-center adreasch@gmail.com
+.row
+	.col-md-6.col-md-offset-3.margin-top
+		form#contact_form.contact-form.text-center.row(method="POST")
+			.col-md-12.form-input-icon
+				i.ion-ios-person
+				input#name(name="name", type="text", placeholder="Name", required)
+			.col-md-12.form-input-icon
+				i.ion-at
+				input#email(name="email", type="email", placeholder="E-mail", required)
+			.col-md-12.form-textarea-icon
+				i.ion-edit
+				textarea#message(name="message", placeholder="Your Message", required)
+			.col-md-12
+				p.required-message * Please, fill all the fields
+				input.contact-form-submit.btn.btn-success(type="submit", value="SUBMIT")
+			#messages.col-md-12

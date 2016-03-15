@@ -1,0 +1,31 @@
+//- Navigation List - Only the list items
+li 
+    a(href="#about")
+        | ABOUT
+li 
+    a(href="#services")
+        | SERVICES
+li 
+    a(href="#works")
+        | WORKS
+li 
+    a(href="#team")
+        | TEAM
+li 
+    a(href="#testimonials")
+        | TESTIMONIALS
+li 
+    a(href="#blog")
+        | BLOG
+li 
+    a(href="#contact")
+        | CONTACT
+li.dropdown 
+    a.dropdown-toggle(data-target="#", data-toggle="dropdown", role="button", aria-haspopup="true", aria-expanded="false") MORE <i class="caret"></i>
+    ul.dropdown-menu(role="menu")
+            li 
+                a.dropdown-link(href="blog.html") BLOG
+            li 
+                a.dropdown-link(href="blog-post-single.html") SINGLE POST
+            li 
+                a.dropdown-link(href="blog-post-single-sidebar.html") POST SIDEBAR 

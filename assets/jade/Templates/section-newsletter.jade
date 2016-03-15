@@ -1,0 +1,15 @@
+//- Newsletter Section
+.row
+	.col-md-8.col-md-offset-2.newsletter-section
+		span
+		.newsletter-content
+			p Fill your E-mail, so we can update you with selected case studies and news.
+			p Usual - 1 E-mail / month
+			form.newsletter-form 
+				.row
+					.col-md-6.col-md-offset-3.form-input-icon.os-animation(data-os-animation="fadeInUp", data-os-animation-delay="0s")
+						i.ion-at
+						input#newsletter-email(name="email", type="email", placeholder="E-mail", required)
+				.row
+					.col-md-12.os-animation(data-os-animation="fadeInUp", data-os-animation-delay=".2s")
+						input.contact-form-submit.btn.btn-success(type="submit", value="SEND")

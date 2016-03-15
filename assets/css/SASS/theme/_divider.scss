@@ -1,0 +1,115 @@
+/* DIVIDER CLASSES */
+/* ===================================== */
+
+/* - Divider Declarations - */
+
+.with-divider-thickline-small span {
+	@extend .divider-thickline-small;
+}
+
+/* - Divider  Styles -  */
+
+// Thick Dividers
+
+.divider-thickline-small {
+	content:'';
+	display: block;
+	width: 30px;
+	height: 1px;
+	background-color: $color-dark;
+	position: relative;
+	margin: 24px 0px !important
+}
+
+// Cross Dividers
+
+.divider-cross-white {
+	background-image: url(../images/divider-cross-white.png);
+	display: block;
+	position: relative;
+	width: 10px;
+	height: 10px;
+	margin: 0 auto;
+}
+
+.divider-cross-black {
+	background-image: url(../images/divider-cross-black.png);
+	display: block;
+	position: relative;
+	width: 10px;
+	height: 10px;
+	margin: 0 auto;
+}
+
+//  Vertical Line Dividers
+
+/* .vertical-line-video {
+	display: block;
+	width: 1px;
+	height: 290px;
+	background-color: #ccc;
+	position: absolute;
+	left:0;
+	right:0;
+	top: -70px;
+	margin: 24px auto !important;
+	z-index: 99;
+} */
+
+.vertical-line-blog:before {
+	content:'';
+	display: block;
+	width: 1px;
+	height: 40px;
+	background-color: #ccc;
+	margin: 24px auto !important;
+	z-index: 999;
+}
+
+.vertical-line-newsletter:before {
+	content:'';
+	display: block;
+	width: 1px;
+	height: 40px;
+	background-color: #ccc;
+	position: absolute;
+	left:0;
+	right:0;
+	top: -40px;
+	margin: 24px auto !important;
+	z-index: 999;
+}
+
+.vertical-line:before {
+	content:'';
+	display: block;
+	width: 1px;
+	height: 120px;
+	background-color: #ccc;
+	margin: 24px auto !important;
+	z-index: 999;
+}
+
+.vertical-line-dark:before {
+	content:'';
+	display: block;
+	width: 1px;
+	height: 120px;
+	background-color: $color-dark;
+	margin: 24px auto;
+	z-index: 999;
+}
+
+// Footer Divider
+
+.footer-divider:before {
+	content: '';
+	background-image: url(../images/divider-x-nav-white.png);
+	display: block;
+	position: relative;
+	width: 100px;
+	height: 20px;
+	margin: 0 auto;
+	opacity: .3;
+}
+

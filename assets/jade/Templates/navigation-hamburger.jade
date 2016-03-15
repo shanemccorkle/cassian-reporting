@@ -1,0 +1,20 @@
+//- Hamburger Menu
+nav.navbar-fixed-hamburger
+	.container.text-center
+		.navbar-brand
+			a(href="index-slider.html")
+				img(src="assets/images/logo/logo-light.png", width="75", alt="Logo")
+		a.toggle-menu.toggle-menu-hamburger.menu-right.pull-right.push-body.nav-icon-hamburger-menu.collapsed(data-toggle="collapse" data-target="#side-menu")
+			span.sr-only
+				| Toggle Navigation
+			span.icon-bar
+			span.icon-bar
+			span.icon-bar
+		//- Mobile Menu
+		.cbp-spmenu.cbp-spmenu-vertical.cbp-spmenu-right.text-left#side-menu
+			img(src="assets/images/logo/logo-light.png", alt="Logo")
+			a.close-menu(href="#")
+				i.icon.ion-ios-close-empty.icon-close.menu-close-btn
+			ul.nav
+				include navigation-list-mobile.jade
+

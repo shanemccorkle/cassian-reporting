@@ -1,0 +1,106 @@
+/* PORTFOLIO HOVER EFFECT */
+/* ===================================== */
+
+.portfolio-container {
+	margin: 0 !important;
+}
+
+.portfolio-item .portfolio-item-overlay {
+	opacity: 0;
+	background-color: $color-dark;
+	position: absolute;
+	top: 12px;
+	left: 12px;
+	bottom: 12px;
+	right: 12px;
+	@include transition (.2s);
+	padding-top: 24px;
+}
+
+.portfolio-item:hover .portfolio-item-overlay {
+	opacity: 1;
+	top: 10px;
+	left: 10px;
+	bottom: 10px;
+	right: 10px;
+}
+
+.portfolio-spaced-item  .portfolio-item-overlay {
+	opacity: 0;
+	background-color: $color-light;
+	position: absolute;
+	top: 22px;
+	left: 22px;
+	bottom: 22px;
+	right: 22px;
+	@include transition (.2s);
+}
+
+.portfolio-spaced-item:hover .portfolio-item-overlay {
+	opacity: 1;
+	top: 20px;
+	left: 20px;
+	bottom: 20px;
+	right: 20px;
+}
+
+.portfolio-spaced > .portfolio-spaced-item{
+	padding: 10px
+}
+
+.masonry-item a img {
+	width: 100%;
+}
+
+/* - Overlay setup - */
+
+.portfolio-item-overlay span {
+	@extend .title-space;
+	color: $color-light;
+	font-size: 10px;
+	@include transition(.2s);
+}
+
+.portfolio-item-overlay h3 {
+	@extend .black;
+	color:$color-light;
+	margin: 0px 0px 24px 0px; 
+	text-transform: uppercase;
+	@include transition(.2s);
+}
+
+.portfolio-item-overlay span:before {
+	content:'';
+	width: 1px;
+	height: 0px;
+	background-color: $color-light;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	display: block;
+	margin-bottom: 24px;
+	opacity: .2;
+	@include transition(.2s);
+}
+
+.portfolio-item-overlay:hover span:before {
+	height: 70px;
+}
+
+.portfolio-item-overlay h2 {
+	@extend .black;
+	color:$color-light;
+	margin: 0px 0px 24px 0px; 
+	text-transform: uppercase;
+	@include transition(.2s);
+}
+
+.portfolio-item-overlay i {
+	opacity: .2;
+	background-image: url(../images/divider-cross-white.png);
+	display: block;
+	position: relative;
+	width: 10px;
+	height: 10px;
+	margin: 0 auto;
+}

@@ -1,0 +1,116 @@
+/* FOOTER */
+/* ===================================== */
+
+.footer-margin {
+	margin-bottom: 250px;
+}
+
+.footer-placeholder {
+	width: 100%;
+	height: 250px;
+	position: relative;
+}
+
+footer {
+	width: 100%;
+	height: auto;
+	position: relative;
+	bottom: 0;
+	left: 0;
+	z-index: 0;
+	&.footer-dark{
+		background-color:$color-dark;
+	}
+}
+
+footer .icon-block-title {
+	margin-top: 30px;
+}
+
+/* - Social icons - */
+
+ul.social-icons {
+	list-style:none;
+	padding-top: 24px;
+	display: inline-block;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 0 !important;
+	padding-bottom: 0px;
+}
+
+ul.social-icons li {
+	cursor: pointer;
+	display: inline-block;
+	@include transition(.2s);
+	@include border-radius(50%);
+	margin: 0 10px;
+}
+
+ul.social-icons li a i {
+	font-size: 23px;
+	color: $color-light;
+	@include transition(.2s);
+	&:hover {
+		color:$color-primary
+	}
+}
+
+.social-link-wrap {
+	display: inline-block;
+	margin: 0 5px;
+	padding: 0 5px !important;
+}
+
+/* Dark Social Icons */
+
+ul.social-icons-dark {
+	list-style:none;
+	display: inline-block;
+	margin-top: 0px;
+}
+
+ul.social-icons-dark li {
+	display: inline-block;
+	font-size: 24px;
+	cursor: pointer;
+	vertical-align: middle;
+}
+
+ul.social-icons-dark li a i {
+	font-size: 22px;
+	color: $color-dark;
+}
+
+ul.social-icons-dark li {
+	margin-right: 24px
+}
+
+ul.social-icons-dark li:first-child{
+	margin-left: 0 !important
+}
+
+/* -  Copyright - */
+
+.footer-message {
+	font-size: 12px;
+	margin: 0px;
+	margin-top: 14px;
+	margin-bottom: 10px;
+	display: block;
+	opacity: .9;
+	color: #fff;
+}
+
+.footer-message a {
+	opacity: .9 !important;
+	color: #fff !important;
+	&:hover {
+		color: $color-primary !important;
+	}
+}
+
+.footer-message i {
+	color: red
+}
